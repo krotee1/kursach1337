@@ -1,0 +1,42 @@
+﻿<Window x:Class="Testovaya.newSotrudnik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Testovaya"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="Новый билет" Height="450" Width="800" Background="Bisque">
+    <Grid Background="#FFB8DEFF">
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    MinWidth="200">
+            <TextBlock Text="Марка поезда" FontFamily="Arial"/>
+            <TextBox x:Name="FullName_TXB" Text="{Binding FullName}"/>
+
+            <TextBlock Text="Дата прибытия" FontFamily="Arial"/>
+            <DatePicker x:Name="Datee" DisplayDateStart="01-01-2023" Text="{Binding Date}"/>
+
+            <TextBlock Text="Откуда" FontFamily="Arial"/>
+            <TextBox x:Name="Dolzhh" Text="{Binding Dolzhnost}"/>
+
+            <TextBlock Text="Цена" FontFamily="Arial"/>
+            <TextBox x:Name="Numm" Text="{Binding Number}"/>
+
+            <TextBlock Text="Куда" FontFamily="Arial"/>
+            <TextBox x:Name="Famm" Text="{Binding Family}"/>
+
+            <TextBlock Text="Вокзал" FontFamily="Arial"/>
+            <TextBox x:Name="Adress" Text="{Binding Adress}"/>
+
+
+
+            <Button Margin="10" Content="Сохраняй как надо"
+                    Click="Save2_Btn_Click" FontFamily="Arial"  FontSize="14" Background="#FF3400FF" Foreground="White"/>
+            
+            
+
+        </StackPanel>
+
+    </Grid>
+</Window>

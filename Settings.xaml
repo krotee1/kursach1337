@@ -1,0 +1,47 @@
+﻿<Window x:Class="Testovaya.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:Testovaya"
+        mc:Ignorable="d"
+        Title="Настройки" Height="450" Width="800">
+    <Grid Background="#FFB8DEFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition Height="102.04"/>
+
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="800" Height="268" VerticalAlignment="Top" Background="White">
+            <Image Height="100" Source="poezd.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="350,0,338,0" Width="112"/>
+            <Button Content="Выйти из аккаунта" Background="#FFED0606" Click="Button_Click" RenderTransformOrigin="0.5,0.677" HorizontalAlignment="Center" VerticalAlignment="Bottom"  FontSize="14" Height="32"/>
+
+
+        </StackPanel>
+        <Button x:Name="skritoe"
+                Content="Пользователи"
+                Margin="10,20,0,10"
+                Width="160"
+                HorizontalAlignment="Left" Click="Button_Click_2" FontFamily="Arial" FontSize="14" Background="#FF3400FF" Foreground="White"/>
+
+        <Button Content="Билеты"
+                Margin="203,20,0,10"
+                Width="160"
+                HorizontalAlignment="Left" Click="Button_Click_1" FontFamily="Arial" FontSize="14" Background="#FF3400FF" Foreground="White"/>
+
+        <Button Content="Настройки"
+                Margin="594,20,0,10"
+                Width="160"
+                HorizontalAlignment="Left" FontFamily="Arial" FontSize="14" Background="#FF3400FF" Foreground="White"/>
+
+        <Button Content="Расписание"
+                Margin="400,20,0,10"
+                Width="160"
+                HorizontalAlignment="Left" Click="Button_Click_3" FontFamily="Arial" FontSize="14" Background="#FF3400FF" Foreground="White"/>
+        <Image Margin="744,0,0,14" Source="poezd.png" Width="43" Height="43" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Image HorizontalAlignment="Left" Height="152" Margin="326,247,-0.4,-39" Grid.Row="1" VerticalAlignment="Top" Width="468" Source="relsy.png" Grid.RowSpan="2"/>
+
+    </Grid>
+</Window>
